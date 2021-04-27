@@ -1,6 +1,12 @@
 # fpa-desafio1
 FPA Desafio 1
 
+# Entrar no diretório principal do repositorio
+Entrar na pasta fpa-desafio1 do repositório clonado
+
+# Criar a rede para os containers
+docker network create desafio1-network
+
 # Iniciar o mysql
 docker run -d --name mysqlfpa --network=desafio1-network -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=fpafullcycle -v $(pwd)/mysql:/var/lib/mysql mysql
 
