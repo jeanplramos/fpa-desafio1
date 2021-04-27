@@ -2,18 +2,15 @@
 FPA Desafio 1
 
 # Imagens criadas
+> mysql-> https://hub.docker.com/r/jeanplramos/fpades1mysql
 > nginx-> https://hub.docker.com/r/jeanplramos/fpades1nginx
-
 > Java App-> https://hub.docker.com/r/jeanplramos/fpades1app
-
-# Entrar no diretório principal do repositorio
-Entrar na pasta fpa-desafio1 do repositório clonado
 
 # Criar a rede para os containers
 docker network create desafio1-network
 
 # Iniciar o mysql
-docker run -d --name mysqlfpa --network=desafio1-network -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=fpafullcycle -v $(pwd)/mysql:/var/lib/mysql mysql
+docker run -d --name mysqlfpa --network=desafio1-network -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=fpafullcycle jeanplramos/fpades1mysql
 
 # Iniciar a aplicação Java SpringBoot
 docker run -d --name app --network=desafio1-network jeanplramos/fpades1app
