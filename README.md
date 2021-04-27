@@ -1,6 +1,10 @@
 # fpa-desafio1
 FPA Desafio 1
 
+# Imagens criadas
+nginx-> jeanplramos/fpades1nginx
+Java App-> jeanplramos/fpades1app
+
 # Entrar no diretório principal do repositorio
 Entrar na pasta fpa-desafio1 do repositório clonado
 
