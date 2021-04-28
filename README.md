@@ -3,7 +3,9 @@ FPA Desafio 1
 
 # Imagens criadas
 > mysql-> https://hub.docker.com/r/jeanplramos/fpades1mysql
+
 > nginx-> https://hub.docker.com/r/jeanplramos/fpades1nginx
+
 > Java App-> https://hub.docker.com/r/jeanplramos/fpades1app
 
 # Criar a rede para os containers
